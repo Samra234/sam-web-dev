@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samra | Web & App Developer - Modern Websites & Mobile Apps</title>
+  <meta name="description" content="Professional Web & App Developer specializing in custom business websites, e-commerce platforms, restaurant/bakery sites, and native Android applications.">
+  <link rel="icon" href="/assets/logo/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="glow-orb glow-orb-primary"></div>
+  <div class="glow-orb glow-orb-purple"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">S</div>
+        <span>SAMRA<span class="text-gradient">.DEV</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-left: 0.5rem;">Let's Work Together</a>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" style="padding-top: 10rem; padding-bottom: 5rem;">
+      <div class="container">
+        <div class="hero-container grid-2" style="align-items: center;">
+          <div class="hero-content reveal-fade">
+            <div class="section-eyebrow">
+              <span class="dot"></span> HELLO, I'M A WEB & APP DEVELOPER
+            </div>
+            
+            <h1 style="margin-bottom: 1.25rem;">
+              I Build <span class="text-gradient">Modern Websites</span> & Powerful Mobile Apps.
+            </h1>
+            
+            <p style="font-size: 1.15rem; margin-bottom: 2rem;">
+              I help businesses and individuals turn their ideas into fast, responsive, and professional digital experiences that turn visitors into loyal customers.
+            </p>
+
+            <div class="hero-buttons" style="display: flex; gap: 1rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+              <a href="portfolio.html" class="btn btn-primary btn-lg">View My Work</a>
+              <a href="contact.html" class="btn btn-secondary btn-lg">Hire Me</a>
+            </div>
+
+            <div class="tech-bar" style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+              <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em;">Specialties:</span>
+              <span class="tech-tag">Web Development</span>
+              <span class="tech-tag">Android Apps</span>
+              <span class="tech-tag">UI/UX</span>
+              <span class="tech-tag">Deployment</span>
+            </div>
+          </div>
+
+          <!-- Hero Developer Card -->
+          <div class="hero-code-card reveal-fade delay-2">
+            <div class="glass-card" style="border-color: rgba(59, 130, 246, 0.25); box-shadow: var(--shadow-glow);">
+              <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 0.85rem; margin-bottom: 1.25rem;">
+                <div style="display: flex; gap: 6px;">
+                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #EF4444;"></span>
+                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #F59E0B;"></span>
+                  <span style="width: 10px; height: 10px; border-radius: 50%; background: #10B981;"></span>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);">samra.config.ts</span>
+              </div>
+              <pre style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-cyan); overflow-x: auto; line-height: 1.6;" id="typewriterCode"></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUICK STATS -->
+        <div class="stats-bar reveal-fade delay-3">
+          <div class="stat-item">
+            <span class="stat-number text-gradient">25+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-cyan">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-gradient">99.9%</span>
+            <span class="stat-label">Fast Uptime & Speed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-cyan">24/7</span>
+            <span class="stat-label">Dedicated Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE PILLARS / TRUST SECTION -->
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <div class="section-eyebrow"><span class="dot"></span> WHY CLIENTS TRUST SAMRA.DEV</div>
+          <h2>Building Solutions That Drive Real Business Growth</h2>
+          <p>I don't just write code — I deliver fast, secure, and beautiful digital products that help your business succeed online.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="glass-card glass-card-hover reveal-fade delay-1">
+            <div style="width: 44px; height: 44px; background: rgba(59, 130, 246, 0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent-blue); margin-bottom: 1.25rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Custom high-speed websites optimized for conversion, branding, and search engine visibility.</p>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-2">
+            <div style="width: 44px; height: 44px; background: rgba(139, 92, 246, 0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent-purple); margin-bottom: 1.25rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3>App Development</h3>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Native Android mobile applications using Kotlin & Firebase for smooth, real-time user experiences.</p>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-3">
+            <div style="width: 44px; height: 44px; background: rgba(6, 182, 212, 0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent-cyan); margin-bottom: 1.25rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+            </div>
+            <h3>Responsive Design</h3>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Pixel-perfect layout adaptability across smartphones, tablets, and wide desktop screens.</p>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-4">
+            <div style="width: 44px; height: 44px; background: rgba(16, 185, 129, 0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent-emerald); margin-bottom: 1.25rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Client-Focused Solutions</h3>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Direct 1-on-1 communication, clear project updates, and long-term post-launch maintenance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <div class="section-eyebrow"><span class="dot"></span> SERVICES OFFERED</div>
+          <h2>Specialized Services Built Around Your Business Needs</h2>
+          <p>From custom web applications to mobile stores, I craft tailor-made solutions for your industry.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="glass-card glass-card-hover reveal-fade delay-1">
+            <h3 style="margin-bottom: 0.75rem;">🌐 Website Development</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Professional, responsive business websites built with modern HTML5, CSS3, JavaScript, and React.</p>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); display:flex; flex-direction:column; gap:0.4rem; margin-bottom: 1.25rem;">
+              <li>✓ Business & Corporate Websites</li>
+              <li>✓ Landing Pages & Sales Funnels</li>
+              <li>✓ Portfolio & Freelancer Sites</li>
+            </ul>
+            <a href="services.html" style="color: var(--accent-blue); font-size: 0.9rem; font-weight: 600;">Explore Web Services →</a>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-2">
+            <h3 style="margin-bottom: 0.75rem;">🛍️ E-Commerce Websites</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Feature-rich online stores with catalog management, cart checkouts, and secure payment integrations.</p>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); display:flex; flex-direction:column; gap:0.4rem; margin-bottom: 1.25rem;">
+              <li>✓ Custom Product Catalogs</li>
+              <li>✓ Payment & Checkout Integration</li>
+              <li>✓ Order Management Systems</li>
+            </ul>
+            <a href="services.html" style="color: var(--accent-blue); font-size: 0.9rem; font-weight: 600;">Explore E-Commerce →</a>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-3">
+            <h3 style="margin-bottom: 0.75rem;">🍕 Restaurant & Bakery Sites</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Eye-catching food & café websites featuring online menu displays, order inquiries, and location maps.</p>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); display:flex; flex-direction:column; gap:0.4rem; margin-bottom: 1.25rem;">
+              <li>✓ Digital Food & Dessert Menus</li>
+              <li>✓ Table Reservation Forms</li>
+              <li>✓ WhatsApp Order Buttons</li>
+            </ul>
+            <a href="services.html" style="color: var(--accent-blue); font-size: 0.9rem; font-weight: 600;">Explore Food Websites →</a>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-1">
+            <h3 style="margin-bottom: 0.75rem;">📱 Android App Development</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Native Android applications built in Kotlin with clean UI, Firebase backend, and Play Store readiness.</p>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); display:flex; flex-direction:column; gap:0.4rem; margin-bottom: 1.25rem;">
+              <li>✓ Kotlin & Android SDK</li>
+              <li>✓ Firebase Database & Auth</li>
+              <li>✓ RESTful API Integration</li>
+            </ul>
+            <a href="services.html" style="color: var(--accent-blue); font-size: 0.9rem; font-weight: 600;">Explore App Services →</a>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-2">
+            <h3 style="margin-bottom: 0.75rem;">🎨 UI/UX Implementation</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Transforming Figma & Sketch designs into pixel-perfect, accessible, and fast web/mobile interfaces.</p>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); display:flex; flex-direction:column; gap:0.4rem; margin-bottom: 1.25rem;">
+              <li>✓ Modern Glassmorphism & Dark Themes</li>
+              <li>✓ Mobile-First Touch Controls</li>
+              <li>✓ Smooth CSS/JS Micro-Animations</li>
+            </ul>
+            <a href="services.html" style="color: var(--accent-blue); font-size: 0.9rem; font-weight: 600;">Explore UI/UX →</a>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-3">
+            <h3 style="margin-bottom: 0.75rem;">🚀 Deployment & Maintenance</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">End-to-end setup including Netlify hosting, GitHub version control, custom domain SSL, and regular updates.</p>
+            <ul style="font-size: 0.85rem; color: var(--text-muted); display:flex; flex-direction:column; gap:0.4rem; margin-bottom: 1.25rem;">
+              <li>✓ Netlify & GitHub Workflow</li>
+              <li>✓ Free SSL & Custom Domain</li>
+              <li>✓ Speed & SEO Optimization</li>
+            </ul>
+            <a href="services.html" style="color: var(--accent-blue); font-size: 0.9rem; font-weight: 600;">Explore Deployment →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES SECTION -->
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <div class="section-eyebrow"><span class="dot"></span> TECH STACK & TOOLS</div>
+          <h2>Modern Technologies Used to Build Solutions</h2>
+          <p>I leverage modern languages, frameworks, and deployment engines for maximum speed and security.</p>
+        </div>
+
+        <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center;" class="reveal-fade delay-1">
+          <div class="glass-card" style="padding: 1rem 1.75rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: #E34F26; font-weight: 800; font-family: var(--font-mono);">HTML5</span>
+            <span style="font-size: 0.85rem; color: var(--text-dim);">Semantic Layouts</span>
+          </div>
+          <div class="glass-card" style="padding: 1rem 1.75rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: #1572B6; font-weight: 800; font-family: var(--font-mono);">CSS3</span>
+            <span style="font-size: 0.85rem; color: var(--text-dim);">Flexbox & Grid</span>
+          </div>
+          <div class="glass-card" style="padding: 1rem 1.75rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: #F7DF1E; font-weight: 800; font-family: var(--font-mono);">JavaScript</span>
+            <span style="font-size: 0.85rem; color: var(--text-dim);">ES6+ & Async</span>
+          </div>
+          <div class="glass-card" style="padding: 1rem 1.75rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: #61DAFB; font-weight: 800; font-family: var(--font-mono);">React</span>
+            <span style="font-size: 0.85rem; color: var(--text-dim);">SPA & Hooks</span>
+          </div>
+          <div class="glass-card" style="padding: 1rem 1.75rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: #7F52FF; font-weight: 800; font-family: var(--font-mono);">Kotlin</span>
+            <span style="font-size: 0.85rem; color: var(--text-dim);">Android Native</span>
+          </div>
+          <div class="glass-card" style="padding: 1rem 1.75rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: #FFCA28; font-weight: 800; font-family: var(--font-mono);">Firebase</span>
+            <span style="font-size: 0.85rem; color: var(--text-dim);">Auth & Firestore</span>
+          </div>
+          <div class="glass-card" style="padding: 1rem 1.75rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: #FFFFFF; font-weight: 800; font-family: var(--font-mono);">GitHub</span>
+            <span style="font-size: 0.85rem; color: var(--text-dim);">Version Control</span>
+          </div>
+          <div class="glass-card" style="padding: 1rem 1.75rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: #00C7B7; font-weight: 800; font-family: var(--font-mono);">Netlify</span>
+            <span style="font-size: 0.85rem; color: var(--text-dim);">Automated Deploy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <div class="section-eyebrow"><span class="dot"></span> PORTFOLIO HIGHLIGHTS</div>
+          <h2>Previous Projects & Concepts</h2>
+          <p>Explore recent web and mobile application builds demonstrating craftsmanship and performance.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Project Card 1: Chef Bubble Kitchen -->
+          <div class="glass-card glass-card-hover project-card reveal-fade delay-1" data-category="web">
+            <div style="margin: -2rem -2rem 1.25rem -2rem; overflow: hidden; height: 210px; border-bottom: 1px solid var(--border-light);">
+              <img src="/assets/projects/ecommerce.jpg" alt="Chef Bubble Kitchen" style="width: 100%; height: 100%; object-fit: cover;" referrerPolicy="no-referrer">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <h3>Chef Bubble Kitchen</h3>
+              <span class="badge-concept">Concept Project</span>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 1rem;">Recipe & Culinary E-Commerce Storefront featuring instant recipe search and gourmet cookware ordering.</p>
+            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="projects/ecommerce-website.html" class="btn btn-primary btn-sm" style="flex:1;">View Case Study</a>
+              <button class="btn btn-secondary btn-sm preview-btn" data-title="Chef Bubble Kitchen" data-desc="A full-featured recipe and cookware marketplace with smooth filter controls and cart management." data-tech="HTML • CSS • JavaScript" data-link="projects/ecommerce-website.html">Quick Preview</button>
+            </div>
+          </div>
+
+          <!-- Project Card 2: Trust Bakers & Sweets -->
+          <div class="glass-card glass-card-hover project-card reveal-fade delay-2" data-category="web">
+            <div style="margin: -2rem -2rem 1.25rem -2rem; overflow: hidden; height: 210px; border-bottom: 1px solid var(--border-light);">
+              <img src="/assets/projects/bakery.jpg" alt="Trust Bakers & Sweets" style="width: 100%; height: 100%; object-fit: cover;" referrerPolicy="no-referrer">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <h3>Trust Bakers & Sweets</h3>
+              <span class="badge-client">Client Project</span>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 1rem;">Artisan bakery website highlighting custom cake reservations, daily pastries, and WhatsApp order dispatch.</p>
+            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JS</span>
+              <span class="tech-tag">Netlify</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="projects/bakery-website.html" class="btn btn-primary btn-sm" style="flex:1;">View Case Study</a>
+              <button class="btn btn-secondary btn-sm preview-btn" data-title="Trust Bakers & Sweets" data-desc="Online confectionery portal built for Trust Bakers, featuring warm cake catalogs and direct customer inquiries." data-tech="HTML • CSS • JavaScript • Netlify" data-link="projects/bakery-website.html">Quick Preview</button>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Tea O Clock -->
+          <div class="glass-card glass-card-hover project-card reveal-fade delay-3" data-category="web">
+            <div style="margin: -2rem -2rem 1.25rem -2rem; overflow: hidden; height: 210px; border-bottom: 1px solid var(--border-light);">
+              <img src="/assets/projects/cafe.jpg" alt="Tea O Clock" style="width: 100%; height: 100%; object-fit: cover;" referrerPolicy="no-referrer">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <h3>Tea O Clock</h3>
+              <span class="badge-concept">Concept Project</span>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 1rem;">Modern café lounge portal showcasing signature brewed teas, dessert items, and location finder.</p>
+            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JS</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="projects/cafe-website.html" class="btn btn-primary btn-sm" style="flex:1;">View Case Study</a>
+              <button class="btn btn-secondary btn-sm preview-btn" data-title="Tea O Clock Café" data-desc="A sleek dark theme website for Tea O Clock, optimized for high visual appeal and instant menu browsing." data-tech="HTML • CSS • JavaScript" data-link="projects/cafe-website.html">Quick Preview</button>
+            </div>
+          </div>
+
+          <!-- Project Card 4: Ajwa Garden Restaurant -->
+          <div class="glass-card glass-card-hover project-card reveal-fade delay-1" data-category="web">
+            <div style="margin: -2rem -2rem 1.25rem -2rem; overflow: hidden; height: 210px; border-bottom: 1px solid var(--border-light);">
+              <img src="/assets/projects/restaurant.jpg" alt="Ajwa Garden Restaurant" style="width: 100%; height: 100%; object-fit: cover;" referrerPolicy="no-referrer">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <h3>Ajwa Garden Restaurant</h3>
+              <span class="badge-client">Client Project</span>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 1rem;">Gourmet family restaurant portal with digital menu categories, table reservations, and event catering details.</p>
+            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="projects/restaurant-website.html" class="btn btn-primary btn-sm" style="flex:1;">View Case Study</a>
+              <button class="btn btn-secondary btn-sm preview-btn" data-title="Ajwa Garden Restaurant" data-desc="High-converting restaurant website with interactive menu categories and booking forms." data-tech="HTML • CSS • JavaScript" data-link="projects/restaurant-website.html">Quick Preview</button>
+            </div>
+          </div>
+
+          <!-- Project Card 5: Personalized Nutrition Android App -->
+          <div class="glass-card glass-card-hover project-card reveal-fade delay-2" data-category="app">
+            <div style="margin: -2rem -2rem 1.25rem -2rem; overflow: hidden; height: 210px; border-bottom: 1px solid var(--border-light);">
+              <img src="/assets/projects/android.jpg" alt="Personalized Nutrition Android App" style="width: 100%; height: 100%; object-fit: cover;" referrerPolicy="no-referrer">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <h3>Personalized Nutrition App</h3>
+              <span class="badge-concept">Android App</span>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 1rem;">Native Android application for macro tracking, customized meal plans, and real-time Firebase sync.</p>
+            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Android SDK</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="projects/android-app.html" class="btn btn-primary btn-sm" style="flex:1;">View Case Study</a>
+              <button class="btn btn-secondary btn-sm preview-btn" data-title="Personalized Nutrition Android App" data-desc="Kotlin native app built for health goal tracking, recipe calculations, and Firebase authentication." data-tech="Kotlin • Firebase • Android Studio" data-link="projects/android-app.html">Quick Preview</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="portfolio.html" class="btn btn-outline btn-lg">View Full Portfolio Gallery →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPMENT PROCESS SECTION -->
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <div class="section-eyebrow"><span class="dot"></span> HOW I WORK</div>
+          <h2>Structured 7-Step Development Process</h2>
+          <p>From initial discussion to post-launch support, I ensure full transparency and timely delivery.</p>
+        </div>
+
+        <div class="process-grid reveal-fade delay-1">
+          <div class="process-card">
+            <span class="process-number">01</span>
+            <div class="process-title">DISCOVER</div>
+            <p class="process-desc">Discuss your business goal, target audience, & specs.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">02</span>
+            <div class="process-title">PLAN</div>
+            <p class="process-desc">Define site structure, tech stack, & project scope.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">03</span>
+            <div class="process-title">DESIGN</div>
+            <p class="process-desc">Create modern, responsive UI/UX visual wireframes.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">04</span>
+            <div class="process-title">DEVELOP</div>
+            <p class="process-desc">Write clean, high-performance HTML/CSS/JS or Kotlin code.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">05</span>
+            <div class="process-title">TEST</div>
+            <p class="process-desc">Cross-browser, speed, SEO & mobile responsiveness audit.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">06</span>
+            <div class="process-title">LAUNCH</div>
+            <p class="process-desc">Deploy to Netlify / Play Store with SSL & domain setup.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-number">07</span>
+            <div class="process-title">SUPPORT</div>
+            <p class="process-desc">Provide post-launch maintenance, security, & updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <div class="section-eyebrow"><span class="dot"></span> THE SAMRA ADVANTAGE</div>
+          <h2>Why Work With Me?</h2>
+          <p>Here is what makes working with me simple, fast, and stress-free.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="glass-card reveal-fade delay-1">
+            <h3 style="color: var(--accent-blue); margin-bottom: 0.5rem;">✨ Modern & Clean Design</h3>
+            <p style="font-size: 0.9rem;">No outdated themes. I build sleek, modern interfaces that make your business look authoritative and trustworthy.</p>
+          </div>
+
+          <div class="glass-card reveal-fade delay-2">
+            <h3 style="color: var(--accent-purple); margin-bottom: 0.5rem;">📱 100% Mobile Responsive</h3>
+            <p style="font-size: 0.9rem;">Your site will render flawlessly on iPhones, Android smartphones, tablets, laptops, and 4K displays.</p>
+          </div>
+
+          <div class="glass-card reveal-fade delay-3">
+            <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">⚡ Lightning Fast Performance</h3>
+            <p style="font-size: 0.9rem;">Optimized code and lightweight assets for Google Lighthouse speed scores of 95-100+.</p>
+          </div>
+
+          <div class="glass-card reveal-fade delay-1">
+            <h3 style="color: var(--accent-emerald); margin-bottom: 0.5rem;">🔍 Basic SEO-Friendly Structure</h3>
+            <p style="font-size: 0.9rem;">Clean HTML markup, meta tags, XML sitemap, and robots.txt so Google can index your pages effortlessly.</p>
+          </div>
+
+          <div class="glass-card reveal-fade delay-2">
+            <h3 style="color: var(--accent-blue); margin-bottom: 0.5rem;">💬 Easy & Clear Communication</h3>
+            <p style="font-size: 0.9rem;">No confusing technical jargon. Prompt progress updates via WhatsApp, Email, or Video Call.</p>
+          </div>
+
+          <div class="glass-card reveal-fade delay-3">
+            <h3 style="color: var(--accent-purple); margin-bottom: 0.5rem;">🛠️ Post-Launch Support</h3>
+            <p style="font-size: 0.9rem;">I won't abandon you after launch. I provide ongoing maintenance, feature updates, and troubleshooting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <div class="section-eyebrow"><span class="dot"></span> PRICING & ESTIMATES</div>
+          <h2>Flexible Pricing Built for Projects of Any Scale</h2>
+          <p>Every business requirement is unique. Here are baseline starting estimates for common services.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="glass-card glass-card-hover reveal-fade delay-1" style="text-align: center;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Website Development</h3>
+            <span style="font-size: 0.85rem; color: var(--text-dim); display: block; margin-bottom: 1.25rem;">Business & Landing Pages</span>
+            <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 1.5rem;">
+              "Let's discuss your requirements"
+            </div>
+            <a href="contact.html?service=web-development" class="btn btn-secondary btn-sm" style="width: 100%;">Request Quote</a>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-2" style="text-align: center;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Android App Dev</h3>
+            <span style="font-size: 0.85rem; color: var(--text-dim); display: block; margin-bottom: 1.25rem;">Kotlin & Firebase Apps</span>
+            <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-purple); margin-bottom: 1.5rem;">
+              "Custom Quote"
+            </div>
+            <a href="contact.html?service=app-development" class="btn btn-secondary btn-sm" style="width: 100%;">Request Quote</a>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-3" style="text-align: center;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">E-Commerce Store</h3>
+            <span style="font-size: 0.85rem; color: var(--text-dim); display: block; margin-bottom: 1.25rem;">Full Online Shopping</span>
+            <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-cyan); margin-bottom: 1.5rem;">
+              "Custom Quote"
+            </div>
+            <a href="contact.html?service=ecommerce" class="btn btn-secondary btn-sm" style="width: 100%;">Request Quote</a>
+          </div>
+
+          <div class="glass-card glass-card-hover reveal-fade delay-4" style="text-align: center;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Custom Web App</h3>
+            <span style="font-size: 0.85rem; color: var(--text-dim); display: block; margin-bottom: 1.25rem;">Tailored Solutions</span>
+            <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-emerald); margin-bottom: 1.5rem;">
+              "Custom Quote"
+            </div>
+            <a href="contact.html?service=custom-app" class="btn btn-secondary btn-sm" style="width: 100%;">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION (CTA) -->
+    <section class="section" style="padding: 6rem 0;">
+      <div class="container">
+        <div class="glass-card reveal-fade" style="text-align: center; padding: 4rem 2rem; background: var(--gradient-glow); border-color: rgba(59, 130, 246, 0.3);">
+          <div class="section-eyebrow" style="margin-bottom: 1rem;"><span class="dot"></span> READY TO GET STARTED?</div>
+          <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Have a Project in Mind?</h2>
+          <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">Let's Build Something Great Together. Tell me about your website or mobile app idea.</p>
+          <a href="contact.html" class="btn btn-primary btn-lg">Start a Project Now →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">S</div>
+            <span>SAMRA<span class="text-gradient">.DEV</span></span>
+          </a>
+          <p>Modern Websites & Mobile Apps Built for Your Business. Helping clients worldwide build fast, high-converting digital products.</p>
+        </div>
+
+        <div>
+          <div class="footer-title">Navigation</div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Services</div>
+          <div class="footer-links">
+            <a href="services.html">Web Development</a>
+            <a href="services.html">Android Apps</a>
+            <a href="services.html">E-Commerce</a>
+            <a href="services.html">Netlify Deployment</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Connect</div>
+          <div class="social-links" style="margin-top: 0.5rem;">
+            <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://wa.me/" target="_blank" class="social-icon" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Samra | Web & App Developer. All rights reserved.</div>
+        <div>Built for Speed & Deployment on Netlify</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Container for Lightbox Previews -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="/js/navigation.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
