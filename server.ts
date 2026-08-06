@@ -13,6 +13,11 @@ async function startServer() {
 
   app.use(express.json());
 
+  // Serve static assets directory directly
+  app.use('/assets', express.static(path.join(process.cwd(), 'public/assets')));
+  app.use('/assets', express.static(path.join(process.cwd(), 'assets')));
+  app.use(express.static(path.join(process.cwd(), 'public')));
+
   // API contact endpoint demonstration
   app.post('/api/contact', (req, res) => {
     const { name, email, service, message } = req.body || {};

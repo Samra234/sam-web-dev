@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="cafeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1424"/>
+      <stop offset="100%" stop-color="#2D1236"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cafeBg)"/>
+  <rect x="40" y="40" width="720" height="420" rx="16" fill="#181920" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <rect x="40" y="40" width="720" height="48" rx="16" fill="#121318"/>
+  <circle cx="70" cy="64" r="6" fill="#EF4444"/>
+  <circle cx="90" cy="64" r="6" fill="#F59E0B"/>
+  <circle cx="110" cy="64" r="6" fill="#10B981"/>
+  <text x="400" y="69" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="600">Tea O Clock | teaoclock.com</text>
+  <text x="80" y="140" fill="#FFFFFF" font-family="sans-serif" font-size="28" font-weight="800">Tea O Clock Café & Lounge</text>
+  <text x="80" y="170" fill="#94A3B8" font-family="sans-serif" font-size="15">Specialty Brewed Teas, Artisan Coffee & Cozy Ambiance</text>
+  <rect x="80" y="195" width="150" height="40" rx="8" fill="#8B5CF6"/>
+  <text x="155" y="220" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="700">View Menu</text>
+  <rect x="80" y="260" width="640" height="160" rx="12" fill="#242530"/>
+  <text x="110" y="300" fill="#A855F7" font-family="sans-serif" font-size="18" font-weight="700">☕ Karak Chai & Specialty Brews</text>
+  <text x="110" y="330" fill="#94A3B8" font-family="sans-serif" font-size="13">Cardamom Tea • Matka Chai • Espresso • Espresso Shakes • Sandwiches</text>
+</svg>
