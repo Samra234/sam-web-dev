@@ -41,6 +41,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function renderSentInquiries() {
+    const container = document.getElementById('sentInquiriesList');
+    if (!container) return;
+
+    const logs = JSON.parse(localStorage.getItem('sentInquiries') || '[]');
+    if (logs.length === 0) {
+      container.innerHTML = `<p style="font-size: 0.88rem; color: var(--text-muted); font-style: italic;">No messages sent yet. Fill out the form above to send an inquiry.</p>`;
+      return;
+    }
+
+    container.innerHTML = logs.map((log, index) => `
+      <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-light); border-radius: 12px; padding: 1rem; margin-bottom: 0.75rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
+          <strong style="color: var(--accent-blue); font-size: 0.95rem;">${log.service}</strong>
+          <span style="font-size: 0.75rem; color: var(--text-dim);">${log.date}</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.25rem;"><strong>From:</strong> ${log.name} (${log.email})</p>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">${log.message}</p>
+      </div>
+    `).join('');
+  }
+
+  renderSentInquiries();
+
   if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -63,24 +87,59 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       try {
-        const response = await fetch('/api/contact', {
+        // Send email via FormSubmit API directly to developer email
+        const response = await fetch('https://formsubmit.co/ajax/samramuhammadsiddique831@gmail.com', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
+          headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            service: formData.service,
+            message: formData.message,
+            _subject: `New Portfolio Inquiry: ${formData.service} from ${formData.name}`,
+            _template: 'table'
+          })
         });
 
         const data = await response.json();
-        
-        if (data.success) {
-          showToast(data.message);
+
+        // Save to local submission history for user review
+        const localLogs = JSON.parse(localStorage.getItem('sentInquiries') || '[]');
+        localLogs.unshift({
+          ...formData,
+          date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString()
+        });
+        localStorage.setItem('sentInquiries', JSON.stringify(localLogs));
+        renderSentInquiries();
+
+        if (data.success === "true" || data.success === true) {
+          showToast(`Thank you ${formData.name}! Your message has been sent directly to samramuhammadsiddique831@gmail.com.`);
           contactForm.reset();
         } else {
-          showToast('Message submitted! Thank you, Samra will contact you shortly.');
+          showToast(`Thank you ${formData.name}! Message sent and logged.`);
           contactForm.reset();
         }
       } catch (err) {
-        // Fallback for purely static deployment on Netlify
-        showToast(`Thank you ${formData.name}! Your request for ${formData.service} has been sent. Samra will reply via email shortly.`);
+        // Fallback to server API or local logging
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        }).catch(() => {});
+
+        const localLogs = JSON.parse(localStorage.getItem('sentInquiries') || '[]');
+        localLogs.unshift({
+          ...formData,
+          date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString()
+        });
+        localStorage.setItem('sentInquiries', JSON.stringify(localLogs));
+        renderSentInquiries();
+
+        showToast(`Thank you ${formData.name}! Your request for ${formData.service} has been logged.`);
         contactForm.reset();
       } finally {
         submitBtn.disabled = false;
