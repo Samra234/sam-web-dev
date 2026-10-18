@@ -18,6 +18,22 @@ async function startServer() {
   app.use('/assets', express.static(path.join(process.cwd(), 'assets')));
   app.use(express.static(path.join(process.cwd(), 'public')));
 
+  app.get('/sitemap.xml', (_req, res) => {
+    const sitemapPath = fs.existsSync(path.join(process.cwd(), 'public/sitemap.xml'))
+      ? path.join(process.cwd(), 'public/sitemap.xml')
+      : path.join(process.cwd(), 'sitemap.xml');
+    res.setHeader('Content-Type', 'application/xml');
+    res.sendFile(sitemapPath);
+  });
+
+  app.get('/robots.txt', (_req, res) => {
+    const robotsPath = fs.existsSync(path.join(process.cwd(), 'public/robots.txt'))
+      ? path.join(process.cwd(), 'public/robots.txt')
+      : path.join(process.cwd(), 'robots.txt');
+    res.setHeader('Content-Type', 'text/plain');
+    res.sendFile(robotsPath);
+  });
+
   // API contact endpoint demonstration
   app.post('/api/contact', (req, res) => {
     const { name, email, service, message } = req.body || {};
